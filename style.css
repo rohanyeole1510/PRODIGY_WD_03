@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive; /* Fun font for the title */
+    color: #7565e0; /* Coral color */
+}
+
+/* Board Styles */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #1b4368; /* Coral border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em; /* Increased font size for X and O */
+    color: #333; /* Dark gray text color */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.cell:hover {
+    background-color: #7e86b5; /* Light coral on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button Styles */
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6667ac; /* Coral background */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+   background-color: #ff4c3b; /* Darker coral on hover */
+}
+
+/* Status Message */
+#status {
+   margin-top: 20px;
+   font-size: 18px;
+   color: #333; /* Dark gray for status text */
+}
